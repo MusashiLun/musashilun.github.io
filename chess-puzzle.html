@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Chess Puzzle - MusashiLun</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .split-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .split-nav .nav-left,
+    .split-nav .nav-right {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .chess-container {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .chess-container img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .chess-container p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body class="no-sidebar is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-wrapper">
+      <div id="header" class="container">
+        <nav id="nav" class="split-nav">
+          <ul class="nav-left">
+            <li class="dropdown">
+              <a href="#">Photography</a>
+              <ul class="dropdown-menu">
+                <li><a href="fossil-collections.html">My Fossil collections</a></li>
+                <li><a href="landscape.html">Landscape photograph</a></li>
+                <li><a href="thin-section.html">Thin section</a></li>
+                <li><a href="core-sample.html">Core Sample</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Recommendations</a>
+              <ul class="dropdown-menu">
+                <li><a href="chess-puzzle.html">Chess Puzzle</a></li>
+                <li><a href="https://www.nhs.uk/tests-and-treatments/first-aid/" target="_blank">First Aid</a></li>
+                <li><a href="fossil-hunt.html">Fossil hunt</a></li>
+                <li><a href="meme.html">Fun Meme</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="nav-logo">
+            <h1 id="logo"><a href="index.html">MUSASHILUN</a></h1>
+          </div>
+
+          <ul class="nav-right">
+            <li class="dropdown">
+              <a href="#">Blow your mind</a>
+              <ul class="dropdown-menu">
+                <li><a href="https://doge.gov/savings" target="_blank">DOGE Savings</a></li>
+                <li><a href="https://www.youtube.com/watch?v=crD7c4kFoJ4&list=PLFoIuvO_yl1xwQmNwPV-kI5c0lhNvpoLY" target="_blank">NEWS</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fund.html">Fund</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="wrapper">
+      <div class="container chess-container">
+        <header class="major">
+          <h2>Chess Puzzle</h2>
+          <p>Sharpen your tactics: can you find the winning move?</p>
+        </header>
+
+        <img src="images/Chess Puzzle 1.png" alt="Chess Puzzle 1">
+        <p>This puzzle is inspired by classic endgames. Try to solve it before scrolling for hints!</p>
+      </div>
+    </div>
+    <button id="hint-toggle" style="margin-top: 1rem;">Show Hint</button>
+    <div id="hint-box" style="display:none; margin-top: 1rem; padding: 1rem; background:#f9f9f9; border: 1px solid #ccc; border-radius: 8px;">
+      <strong>Hints:</strong><br>
+      Qxh7+ Kxh7 Rh3+ Kg7 Bh6+ Kh7 Bf8#<br>
+      <em>or</em><br>
+      Qxh7+ Kxh7 Rh3+ Kg7 Bh6+ Kh8 Bf8+ Nh4 Rxh4#
+    </div>
+    
+    <script>
+      document.getElementById("hint-toggle").addEventListener("click", function () {
+        const box = document.getElementById("hint-box");
+        if (box.style.display === "none") {
+          box.style.display = "block";
+          this.innerText = "Hide Hint";
+        } else {
+          box.style.display = "none";
+          this.innerText = "Show Hint";
+        }
+      });
+    </script>
+    
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <div id="footer" class="container">
+        <header class="major">
+          <h2>Thank you for playing!</h2>
+          <p>More puzzles and challenges coming soon.</p>
+        </header>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
