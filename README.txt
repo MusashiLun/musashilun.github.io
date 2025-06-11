@@ -1,7 +1,14 @@
 Template based on Telephasic by HTML5 UP
 html5up.net | @ajlkn
-design by @Musashi Lun
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+Modified and partially redesigned by @Musashi Lun (https://github.com/MusashiLun), including a custom header and layout adjustments.
+
+Code and layout (excluding images) are free for personal and commercial use under the CCA 3.0 license (html5up.net/license).
+
+⚠️ Important: All images located in the "images" folder are copyrighted by @Musashi Lun and are NOT licensed under CCA 3.0. 
+They may not be used for private or commercial purposes without the author's written permission. 
+Please contact: https://github.com/MusashiLun for inquiries.
+
 
 
 This is Telephasic, a brand new site template for HTML5 UP. It features a sharp, modern
