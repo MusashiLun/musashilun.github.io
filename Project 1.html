@@ -1,49 +1,138 @@
-<!-- Header -->
-			<div id="header-wrapper">
-				<div id="header" class="container">
-				  <nav id="nav" class="split-nav">
-					<ul class="nav-left">
-					  <li class="dropdown">
-						<a href="#">Photography</a>
-						<ul class="dropdown-menu">
-						  <li><a href="fossil-collections.html">My Fossil collections</a></li>
-						  <li><a href="landscape.html">Landscape photograph</a></li>
-						  <li><a href="thin-section.html">Thin section</a></li>
-						  <li><a href="core-sample.html">Core Sample</a></li>
-						</ul>
-					  </li>
-					  <li class="dropdown">
-						<a href="#">Recommendations</a>
-						<ul class="dropdown-menu">
-						  <li><a href="chess-puzzle.html">Chess Puzzle</a></li>
-						  <li><a href="https://www.nhs.uk/tests-and-treatments/first-aid/" target="_blank">First Aid</a></li>
-						  <li><a href="fossil-hunt.html">Fossil hunt</a></li>
-						  <li><a href="meme.html">Fun Meme</a></li>
-						  <li><a href="Project 1.html">My AI Project</a></li>
-						  <li><a href="biology-news.html">Biology News</a></li>
-						</ul>
-					  </li>
-					</ul>
-		  
-					<div class="nav-logo">
-					  <h1 id="logo"><a href="index.html">MUSASHILUN</a></h1>
-					</div>
-		  
-					<ul class="nav-right">
-					  <li class="dropdown">
-						<a href="#">Blow your mind</a>
-						<ul class="dropdown-menu">
-						  <li><a href="https://doge.gov/savings" target="_blank">DOGE Savings</a></li>
-						  <li><a href="https://www.youtube.com/watch?v=crD7c4kFoJ4&list=PLFoIuvO_yl1xwQmNwPV-kI5c0lhNvpoLY" target="_blank">NEWS</a></li>
-						</ul>
-					  </li>
-					  <li><a href="about.html">About</a></li>
-					  <li><a href="fund.html">Fund</a></li>
-					</ul>
-				  </nav>
-				</div>
-			  </div>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>My AI Project - MusashiLun</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="no-sidebar is-preload">
+  <div id="page-wrapper">
 
+    <!-- Header -->
+    <div id="header-wrapper">
+      <div id="header" class="container">
+        <nav id="nav" class="split-nav">
+          <ul class="nav-left">
+            <li class="dropdown">
+              <a href="#">Photography</a>
+              <ul class="dropdown-menu">
+                <li><a href="fossil-collections.html">My Fossil collections</a></li>
+                <li><a href="landscape.html">Landscape photograph</a></li>
+                <li><a href="thin-section.html">Thin section</a></li>
+                <li><a href="core-sample.html">Core Sample</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Recommendations</a>
+              <ul class="dropdown-menu">
+                <li><a href="chess-puzzle.html">Chess Puzzle</a></li>
+                <li><a href="https://www.nhs.uk/tests-and-treatments/first-aid/" target="_blank">First Aid</a></li>
+                <li><a href="fossil-hunt.html">Fossil hunt</a></li>
+                <li><a href="meme.html">Fun Meme</a></li>
+                <li><a href="Project 1.html">My AI Project</a></li>
+                <li><a href="biology-news.html">Biology News</a></li>
+              </ul>
+            </li>
+          </ul>
 
+          <div class="nav-logo">
+            <h1 id="logo"><a href="index.html">MUSASHI LUN</a></h1>
+          </div>
 
-              
+          <ul class="nav-right">
+            <li class="dropdown">
+              <a href="#">Blow your mind</a>
+              <ul class="dropdown-menu">
+                <li><a href="https://doge.gov/savings" target="_blank">DOGE Savings</a></li>
+                <li><a href="https://www.youtube.com/watch?v=crD7c4kFoJ4&list=PLFoIuvO_yl1xwQmNwPV-kI5c0lhNvpoLY" target="_blank">NEWS</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fund.html">Fund</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="wrapper">
+      <div class="container">
+        <header class="major">
+          <h2>My AI Project</h2>
+        </header>
+        <section>
+          <p><strong>Version 2, still updating</strong><br>
+          My project aims to enhance the protection and study of fossils by leveraging artificial intelligence to aid in fossil discovery, collection, and classification. This project emphasizes both practical field applications and the potential for scientific breakthroughs.</p>
+
+          <h3>Background:</h3>
+          <p>Fossils are typically preserved in sedimentary rocks like shale, sometimes forming within concretions. On beaches, erosion may reveal parts of fossils embedded in pebbles. Identifying such fossil-bearing pebbles—especially in the intertidal zone—is challenging using traditional visual inspection alone.</p>
+
+          <h3>Limitations of Traditional Methods:</h3>
+          <p>Traditional fossil hunting relies heavily on human eyesight and manual collection, which is inefficient, especially in dynamic and challenging environments such as intertidal zones or remote locations.</p>
+
+          <h3>Proposed Solution: AI-Based Fossil Detection</h3>
+          <p>I propose training an object detection model, currently using YOLOv8, to automatically detect and classify:</p>
+          <ul>
+            <li>fossil_pebble: pebbles with visible fossil parts</li>
+            <li>concretion: rounded, fossil-bearing formations in shale</li>
+            <li>fossil: clear fossil features</li>
+          </ul>
+          <p>Initially, smartphone videos of fossil-rich beaches will be analyzed. In later stages, drones and high-resolution cameras will be introduced. The AI will scan video frames, identify potential targets using bounding boxes, and guide researchers for direct collection.</p>
+
+          <h3>Expansion - Broader Prospects!</h3>
+          <ul>
+            <li>In areas inaccessible to humans, like the deep sea, fossils also exist. The AI could be deployed locally on graphics cards in underwater probes for real-time detection.</li>
+            <li>Shallow waters also contain fossils! Robots or divers equipped with this technology could explore places traditional hunters can’t reach.</li>
+            <li>On Mars, sedimentary rocks suggest possible fossils. Trained AI models could be deployed on rovers for real-time fossil detection and transmission of data back to Earth.</li>
+            <li>Other planets might also harbor sedimentary rocks—and even microbial fossils would be a breakthrough!</li>
+            <li>If successful, the model could be used on autonomous robots or FPV systems patrolling SSSIs, possibly in collaboration with the University of Manchester.</li>
+          </ul>
+          <p>Using AI means learning the characteristics of fossils. By matching these characteristics to targets, we might even discover new fossils!</p>
+
+          <h3>Current Challenges and Progress:</h3>
+          <p>I’m currently training a YOLOv8 model, but the accuracy fluctuates around 10%. This is because I’ve only used 150 samples—120 for training and 30 for validation—which is a very small dataset.</p>
+          <p>My current setup is an M1 MacBook Air, which has limited computing power. I aim to expand the dataset, and also increase epochs, batch size, image size, and patience for training sessions.</p>
+
+          <p>I also want to learn more about AI training techniques, such as:</p>
+          <ul>
+            <li><strong>Data Augmentation:</strong> Using random rotation, cropping, brightness adjustments, etc.</li>
+            <li><strong>Model Optimization:</strong> Using Focal Loss to address class imbalance and advanced augmentation methods like CutMix or Mosaic.</li>
+          </ul>
+
+          <p><strong>I’d really appreciate your help or any suggestions you might have :)</strong></p>
+          <p><em>More updates coming soon:)</em></p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <div id="footer" class="container">
+        <header class="major">
+          <h2>Thanks for checking out my AI project!</h2>
+          <p>Stay tuned for future updates.</p>
+        </header>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div id="copyright" class="container">
+    <ul class="menu">
+      <li>&copy; <a href="https://github.com/MusashiLun" target="_blank">MusashiLun</a></li>
+      <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li> & <a href="https://github.com/MusashiLun" target="_blank">MusashiLun</a>
+    </ul>
+    All rights reserved.
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
